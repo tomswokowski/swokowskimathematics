@@ -45,7 +45,7 @@ export default function CourseContent() {
     <div className="bg-white">
       <div className="mx-auto max-w-7xl py-16 px-4 sm:px-6 lg:grid lg:grid-cols-3 lg:gap-x-20 lg:py-24 lg:px-8">
         <div>
-          <h2 className="text-xl font-bold uppercase tracking-wide text-red-600">
+          <h2 className="text-xl font-bold uppercase tracking-wide text-gray-400">
             The Ultimate Guide to Understanding Algebra
           </h2>
           <p className="mt-2 text-3xl font-extrabold text-gray-900">
