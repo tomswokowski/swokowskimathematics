@@ -8,11 +8,11 @@ export const MainLayout: LayoutProps = ({ children }) => {
     <>
       <SEO />
       <div className="flex h-screen flex-col justify-between">
-        <div>
+        <div className="relative pt-6">
           <NavBar />
           <main className="px-4 py-6">{children}</main>
+          <Footer />
         </div>
-        <Footer />
       </div>
     </>
   );

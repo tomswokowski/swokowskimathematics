@@ -1,8 +1,25 @@
 import { MainLayout } from '../components/layouts/MainLayout';
+import HeroSection from '../components/landing/HeroSection';
+import FeatureSection from '../components/landing/FeatureSection';
+import CourseContent from '../components/landing/CourseContent';
+import CTASection from '../components/landing/CTASection';
+import TestimonialSection from '../components/landing/TestimonialSection';
+import InstructorSection from '../components/landing/InstructorSection';
+import FAQSection from '../components/landing/FAQSection';
+import NewsletterSection from '../components/landing/NewsletterSection';
 
 const Home = () => {
   return (
-    <h1 className="text-3xl font-bold text-red-500">Swokowski Mathematics</h1>
+    <>
+      <HeroSection />
+      <FeatureSection />
+      <TestimonialSection />
+      <CourseContent />
+      <InstructorSection />
+      <CTASection />
+      <FAQSection />
+      <NewsletterSection />
+    </>
   );
 };
 
