@@ -1,26 +1,42 @@
 export default function HeroSection() {
   return (
-    <div className="relative pt-6 pb-16 sm:pb-24 lg:pb-32">
-      <main className="mx-auto max-w-7xl px-4 sm:px-6 md:mt-16 lg:mt-24">
+    <div className="relative pt-6 pb-8 sm:pb-16 lg:pb-24">
+      <main className="mx-auto max-w-7xl px-4 sm:px-6 md:mt-8 lg:mt-16">
         <div className="lg:grid lg:grid-cols-12 lg:gap-8">
           <div className="sm:text-center md:mx-auto md:max-w-2xl lg:col-span-6 lg:text-left">
             <h1>
-              <span className="block text-sm font-semibold uppercase tracking-wide text-gray-500 sm:text-base lg:text-sm xl:text-base">
-                Coming soon
-              </span>
-              <span className="mt-1 block text-4xl font-extrabold tracking-tight sm:text-5xl xl:text-6xl">
-                <span className="block text-gray-900">Data to enrich your</span>
-                <span className="block text-indigo-600">online business</span>
+              <span className="mt-1 block text-4xl font-extrabold tracking-tight text-gray-900 sm:text-5xl xl:text-6xl">
+                <span className="block">Become an</span>
+                <span className="block">Algebra Expert</span>
               </span>
             </h1>
             <p className="mt-3 text-base text-gray-500 sm:mt-5 sm:text-xl lg:text-lg xl:text-xl">
-              Anim aute id magna aliqua ad ad non deserunt sunt. Qui irure qui
-              lorem cupidatat commodo. Elit sunt amet fugiat veniam occaecat
-              fugiat aliqua ad ad non deserunt sunt.
+              Learn everything you need to know in order to ace your Algebra
+              class in this comprehensive course. View all 323 lessons for free
+              on{' '}
+              <a
+                href="https://www.youtube.com/channel/UCX_hglZU0ipL5WZXzDjmC1Q"
+                target="_blank"
+                rel="noreferrer"
+                className="text-red-500 underline"
+              >
+                YouTube
+              </a>{' '}
+              or enroll in the course on{' '}
+              <a
+                href="https://www.udemy.com/course/theultimateguidetounderstandingalgebra/?couponCode=ALGEBRA2022"
+                target="_blank"
+                rel="noreferrer"
+                className="text-red-500 underline"
+              >
+                Udemy
+              </a>{' '}
+              to get additional support and have all extra learning material
+              included.
             </p>
             <div className="mt-8 sm:mx-auto sm:max-w-lg sm:text-center lg:mx-0 lg:text-left">
               <p className="text-base font-medium text-gray-900">
-                Sign up to get notified when it’s ready.
+                Enter your email and receive the course workbook free
               </p>
               <form action="#" method="POST" className="mt-3 sm:flex">
                 <label htmlFor="email" className="sr-only">
@@ -30,22 +46,20 @@ export default function HeroSection() {
                   type="email"
                   name="email"
                   id="email"
-                  className="block w-full rounded-md border-gray-300 py-3 text-base placeholder-gray-500 shadow-sm focus:border-indigo-500 focus:ring-indigo-500 sm:flex-1"
+                  className="block w-full rounded-md border-gray-300 py-3 text-base placeholder-gray-500 shadow-sm focus:border-red-500 focus:ring-red-500 sm:flex-1"
                   placeholder="Enter your email"
                 />
                 <button
                   type="submit"
-                  className="mt-3 w-full rounded-md border border-transparent bg-gray-800 px-6 py-3 text-base font-medium text-white shadow-sm hover:bg-gray-900 focus:outline-none focus:ring-2 focus:ring-indigo-500 focus:ring-offset-2 sm:mt-0 sm:ml-3 sm:inline-flex sm:w-auto sm:flex-shrink-0 sm:items-center"
+                  className="mt-3 w-full rounded-md border border-transparent bg-red-600 px-6 py-3 text-base font-medium text-white shadow-sm hover:bg-red-500 focus:outline-none focus:ring-2 focus:ring-red-500 focus:ring-offset-2 sm:mt-0 sm:ml-3 sm:inline-flex sm:w-auto sm:flex-shrink-0 sm:items-center"
                 >
-                  Notify me
+                  Get Free Workbook
                 </button>
               </form>
               <p className="mt-3 text-sm text-gray-500">
-                We care about the protection of your data. Read our
-                <a href="#" className="font-medium text-gray-900 underline">
-                  Privacy Policy
-                </a>
-                .
+                You will receive a 323 page downloadable PDF file that contains
+                over 1,700 practice problems that accompany each lesson in the
+                course.
               </p>
             </div>
           </div>
@@ -55,7 +69,9 @@ export default function HeroSection() {
                 type="button"
                 className="relative block w-full overflow-hidden rounded-lg bg-white focus:outline-none focus:ring-2 focus:ring-indigo-500 focus:ring-offset-2"
               >
-                <span className="sr-only">Watch our video to learn more</span>
+                <span className="sr-only">
+                  Watch the promo video to learn more
+                </span>
                 <img
                   className="w-full"
                   src="https://images.unsplash.com/photo-1556740758-90de374c12ad?ixlib=rb-1.2.1&auto=format&fit=crop&w=1350&q=80"
@@ -66,7 +82,7 @@ export default function HeroSection() {
                   aria-hidden="true"
                 >
                   <svg
-                    className="h-20 w-20 text-indigo-500"
+                    className="h-20 w-20 text-red-500"
                     fill="currentColor"
                     viewBox="0 0 84 84"
                   >

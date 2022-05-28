@@ -8,8 +8,8 @@ const navigation = {
     { name: 'Resources', href: '/resources' },
   ],
   courses: [
-    { name: 'Complete Course', href: '#' },
-    { name: 'Bootcamp', href: '#' },
+    { name: 'The Ultimate Guide to Understanding Algebra', href: '#' },
+    { name: 'Algebra Bootcamp', href: '#' },
   ],
 };
 
@@ -20,7 +20,7 @@ export const Footer = () => {
         Footer
       </h2>
       <div className="mx-auto max-w-7xl py-2 px-4 sm:px-6 lg:px-8">
-        <div className="xl:grid xl:grid-cols-3 xl:gap-8">
+        <div className="xl:grid xl:grid-cols-2 xl:gap-8">
           <div className="space-y-8 xl:col-span-1">
             <Image
               src="/logo.png"
@@ -29,12 +29,11 @@ export const Footer = () => {
               height={95}
             />
             <p className="text-base text-gray-500">
-              Making the world a better place through constructing elegant
-              hierarchies.
+              The complete online resource to learn Algebra.
             </p>
           </div>
-          <div className="mt-12 grid grid-cols-2 gap-8 xl:col-span-2 xl:mt-0">
-            <div className="md:grid md:grid-cols-2 md:gap-8">
+          <div className="mt-12 grid grid-cols-1 xl:col-span-1 xl:mt-0">
+            <div className="md:grid md:grid-cols-2 md:gap-4">
               <div>
                 <h3 className="text-sm font-semibold uppercase tracking-wider text-gray-400">
                   Links
@@ -43,7 +42,7 @@ export const Footer = () => {
                   {navigation.links.map((item) => (
                     <li key={item.name}>
                       <Link href={item.href}>
-                        <a className="text-base text-gray-500 hover:text-gray-900">
+                        <a className="text-base text-gray-500 hover:text-gray-900 xl:text-xs">
                           {item.name}
                         </a>
                       </Link>
@@ -60,7 +59,7 @@ export const Footer = () => {
                     <li key={item.name}>
                       <a
                         href={item.href}
-                        className="text-base text-gray-500 hover:text-gray-900"
+                        className="text-base text-gray-500 hover:text-gray-900 xl:text-xs"
                       >
                         {item.name}
                       </a>
@@ -73,7 +72,7 @@ export const Footer = () => {
         </div>
         <div className="mt-12 border-t border-gray-200 pt-8">
           <p className="text-base text-gray-400 xl:text-center">
-            &copy; {new Date().getFullYear()} Swokowski Mathematics All rights
+            &copy; {new Date().getFullYear()} Swokowski Mathematics. All rights
             reserved.
           </p>
         </div>

@@ -1,19 +1,12 @@
 export default function TestimonialSection() {
   return (
-    <section className="bg-indigo-800">
+    <section className="bg-gray-50">
       <div className="mx-auto max-w-7xl md:grid md:grid-cols-2 md:px-6 lg:px-8">
-        <div className="py-12 px-4 sm:px-6 md:flex md:flex-col md:border-r md:border-indigo-900 md:py-16 md:pl-0 md:pr-10 lg:pr-16">
-          <div className="md:flex-shrink-0">
-            <img
-              className="h-12"
-              src="https://tailwindui.com/img/logos/tuple-logo-indigo-300.svg"
-              alt="Tuple"
-            />
-          </div>
+        <div className="py-12 px-4 sm:px-6 md:flex md:flex-col md:py-16 md:pl-0 md:pr-10 lg:pr-16">
           <blockquote className="mt-6 md:flex md:flex-grow md:flex-col">
-            <div className="relative text-lg font-medium text-white md:flex-grow">
+            <div className="relative text-lg font-medium text-gray-900 md:flex-grow">
               <svg
-                className="absolute top-0 left-0 h-8 w-8 -translate-x-3 -translate-y-2 transform text-indigo-600"
+                className="absolute top-0 left-0 h-8 w-8 -translate-x-3 -translate-y-2 transform text-gray-300"
                 fill="currentColor"
                 viewBox="0 0 32 32"
                 aria-hidden="true"
@@ -21,71 +14,54 @@ export default function TestimonialSection() {
                 <path d="M9.352 4C4.456 7.456 1 13.12 1 19.36c0 5.088 3.072 8.064 6.624 8.064 3.36 0 5.856-2.688 5.856-5.856 0-3.168-2.208-5.472-5.088-5.472-.576 0-1.344.096-1.536.192.48-3.264 3.552-7.104 6.624-9.024L9.352 4zm16.512 0c-4.8 3.456-8.256 9.12-8.256 15.36 0 5.088 3.072 8.064 6.624 8.064 3.264 0 5.856-2.688 5.856-5.856 0-3.168-2.304-5.472-5.184-5.472-.576 0-1.248.096-1.44.192.48-3.264 3.456-7.104 6.528-9.024L25.864 4z" />
               </svg>
               <p className="relative">
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Nemo
-                expedita voluptas culpa sapiente alias molestiae. Numquam
-                corrupti in laborum sed rerum et corporis.
+                Amazing Instructor! I was well out of high school and completely
+                forgot everything about Algebra, so I decided to take this
+                course. The pace and process that you are taken through is
+                perfect! If you start at lesson 1 and go through the program, I
+                can promise you will learn everything and actually understand it
+                all!
               </p>
             </div>
             <footer className="mt-8">
               <div className="flex items-start">
-                <div className="inline-flex flex-shrink-0 rounded-full border-2 border-white">
-                  <img
-                    className="h-12 w-12 rounded-full"
-                    src="https://images.unsplash.com/photo-1494790108377-be9c29b29330?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=facearea&facepad=2&w=256&h=256&q=80"
-                    alt=""
-                  />
-                </div>
-                <div className="ml-4">
-                  <div className="text-base font-medium text-white">
-                    Judith Black
+                <div>
+                  <div className="text-base font-medium text-gray-900">
+                    Benny C.
                   </div>
-                  <div className="text-base font-medium text-indigo-200">
-                    CEO, Tuple
+                  <div className="text-base font-medium text-gray-400">
+                    Former Student
                   </div>
                 </div>
               </div>
             </footer>
           </blockquote>
         </div>
-        <div className="border-t-2 border-indigo-900 py-12 px-4 sm:px-6 md:border-t-0 md:border-l md:py-16 md:pr-0 md:pl-10 lg:pl-16">
-          <div className="md:flex-shrink-0">
-            <img
-              className="h-12"
-              src="https://tailwindui.com/img/logos/workcation-logo-indigo-300.svg"
-              alt="Workcation"
-            />
-          </div>
+        <div className="py-12 px-4 sm:px-6 md:py-16 md:pr-0 md:pl-10 lg:pl-16">
           <blockquote className="mt-6 md:flex md:flex-grow md:flex-col">
-            <div className="relative text-lg font-medium text-white md:flex-grow">
+            <div className="relative text-lg font-medium text-gray-900 md:flex-grow">
               <svg
-                className="absolute top-0 left-0 h-8 w-8 -translate-x-3 -translate-y-2 transform text-indigo-600"
+                className="absolute top-0 left-0 h-8 w-8 -translate-x-3 -translate-y-2 transform text-gray-300"
                 fill="currentColor"
                 viewBox="0 0 32 32"
               >
                 <path d="M9.352 4C4.456 7.456 1 13.12 1 19.36c0 5.088 3.072 8.064 6.624 8.064 3.36 0 5.856-2.688 5.856-5.856 0-3.168-2.208-5.472-5.088-5.472-.576 0-1.344.096-1.536.192.48-3.264 3.552-7.104 6.624-9.024L9.352 4zm16.512 0c-4.8 3.456-8.256 9.12-8.256 15.36 0 5.088 3.072 8.064 6.624 8.064 3.264 0 5.856-2.688 5.856-5.856 0-3.168-2.304-5.472-5.184-5.472-.576 0-1.248.096-1.44.192.48-3.264 3.456-7.104 6.528-9.024L25.864 4z" />
               </svg>
               <p className="relative">
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Nemo
-                expedita voluptas culpa sapiente alias molestiae. Numquam
-                corrupti in laborum sed rerum et corporis. Nemo expedita
-                voluptas culpa sapiente alias molestiae.
+                Explanations are very clear and the repetition solidifies in the
+                mind. Afterwards the practice exercises gives me hands-on
+                experience. I&apos;m learning a lot of simple methods to solve
+                equations; some I hadn&apos;t been exposed to in the past. This
+                is an awesome course due to an excellent instructor.
               </p>
             </div>
             <footer className="mt-8">
               <div className="flex items-start">
-                <div className="inline-flex flex-shrink-0 rounded-full border-2 border-white">
-                  <img
-                    className="h-12 w-12 rounded-full"
-                    src="https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=facearea&facepad=2&w=256&h=256&q=80"
-                    alt=""
-                  />
-                </div>
-                <div className="ml-4">
-                  <div className="text-base font-medium text-white">
-                    Joseph Rodriguez
+                <div>
+                  <div className="text-base font-medium text-gray-900">
+                    Enya
                   </div>
-                  <div className="text-base font-medium text-indigo-200">
-                    CEO, Workcation
+                  <div className="text-base font-medium text-gray-400">
+                    Former Student
                   </div>
                 </div>
               </div>

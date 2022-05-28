@@ -14,11 +14,10 @@ const Home = () => {
       <HeroSection />
       <FeatureSection />
       <TestimonialSection />
-      <CourseContent />
       <InstructorSection />
-      <CTASection />
+      <CourseContent />
       <FAQSection />
-      <NewsletterSection />
+      <CTASection />
     </>
   );
 };

@@ -3,6 +3,7 @@ import { Popover, Transition } from '@headlessui/react';
 import { MenuIcon, XIcon } from '@heroicons/react/outline';
 import Image from 'next/image';
 import Link from 'next/link';
+import { ExternalLinkIcon } from '@heroicons/react/solid';
 
 const navigation = [
   { name: 'Lessons', href: '/lessons' },
@@ -17,7 +18,7 @@ export const NavBar = () => {
           className="relative mx-auto flex max-w-7xl items-center justify-between px-4 sm:px-6"
           aria-label="Global"
         >
-          <div className="flex flex-1 items-center">
+          <div className="flex flex-1 items-center justify-between">
             <div className="flex w-full items-center justify-between md:w-auto">
               <Link href="/">
                 <a>
@@ -31,16 +32,16 @@ export const NavBar = () => {
                 </a>
               </Link>
               <div className="-mr-2 flex items-center md:hidden">
-                <Popover.Button className="inline-flex items-center justify-center rounded-md bg-white p-2 text-gray-400 hover:bg-gray-100 hover:text-gray-500 focus:outline-none focus:ring-2 focus:ring-inset focus:ring-red-500">
+                <Popover.Button className="inline-flex items-center justify-center rounded-md bg-white p-2 text-gray-900 hover:bg-gray-100 hover:text-gray-500 focus:outline-none focus:ring-2 focus:ring-inset focus:ring-red-500">
                   <span className="sr-only">Open main menu</span>
                   <MenuIcon className="h-6 w-6" aria-hidden="true" />
                 </Popover.Button>
               </div>
             </div>
-            <div className="hidden md:ml-20 md:block md:space-x-10">
+            <div className="hidden md:mr-10 md:block md:space-x-10">
               {navigation.map((item) => (
                 <Link href={item.href} key={item.name}>
-                  <a className="font-medium text-gray-500 hover:text-gray-900">
+                  <a className="font-medium text-gray-900 hover:text-red-600">
                     {item.name}
                   </a>
                 </Link>
@@ -50,12 +51,16 @@ export const NavBar = () => {
           <div className="hidden text-right md:block">
             <span className="inline-flex rounded-md shadow-md ring-1 ring-black ring-opacity-5">
               <a
-                href={process.env.UDEMY_URL}
+                href="https://www.udemy.com/course/theultimateguidetounderstandingalgebra/?couponCode=ALGEBRA2022"
                 target="_blank"
                 rel="noreferrer"
-                className="inline-flex items-center rounded-md border border-transparent bg-white px-4 py-2 text-base font-medium text-red-600 hover:bg-gray-50"
+                className="inline-flex items-center rounded-md border border-transparent bg-red-600 px-4 py-2 text-base font-medium text-white hover:bg-red-500"
               >
                 View Course
+                <ExternalLinkIcon
+                  className="-mr-1 ml-3 h-5 w-5 text-white"
+                  aria-hidden="true"
+                />
               </a>
             </span>
           </div>
@@ -85,7 +90,7 @@ export const NavBar = () => {
                   />
                 </div>
                 <div className="-mr-2">
-                  <Popover.Button className="inline-flex items-center justify-center rounded-md bg-white p-2 text-gray-400 hover:bg-gray-100 hover:text-gray-500">
+                  <Popover.Button className="inline-flex items-center justify-center rounded-md bg-white p-2 text-gray-900 hover:bg-gray-100 hover:text-gray-500">
                     <span className="sr-only">Close main menu</span>
                     <XIcon className="h-6 w-6" aria-hidden="true" />
                   </Popover.Button>
@@ -96,7 +101,7 @@ export const NavBar = () => {
                   <a
                     key={item.name}
                     href={item.href}
-                    className="block rounded-md px-3 py-2 text-base font-medium text-gray-700 hover:bg-gray-50 hover:text-gray-900"
+                    className="block rounded-md px-3 py-2 text-base font-medium text-gray-900 hover:bg-gray-50"
                   >
                     {item.name}
                   </a>
@@ -106,9 +111,13 @@ export const NavBar = () => {
                 href="https://www.udemy.com/course/theultimateguidetounderstandingalgebra/?couponCode=ALGEBRA2022"
                 target="_blank"
                 rel="noreferrer"
-                className="block w-full cursor-pointer bg-gray-50 px-5 py-3 text-center font-medium text-red-600 hover:bg-gray-100"
+                className="inline-flex w-full cursor-pointer items-center bg-gray-50 px-5 py-3 text-center font-medium text-red-600 hover:bg-gray-100"
               >
                 View Course
+                <ExternalLinkIcon
+                  className="-mr-1 ml-3 h-5 w-5 text-red-600"
+                  aria-hidden="true"
+                />
               </a>
             </div>
           </Popover.Panel>

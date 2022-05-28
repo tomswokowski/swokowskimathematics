@@ -1,63 +1,67 @@
 import { CheckIcon } from '@heroicons/react/outline';
+import Link from 'next/link';
 
 const features = [
   {
-    name: 'Invite team members',
-    description:
-      'You can manage phone, email and chat conversations all from a single mailbox.',
+    name: 'Course Keyword',
   },
   {
-    name: 'List view',
-    description:
-      'You can manage phone, email and chat conversations all from a single mailbox.',
+    name: 'Course Keyword',
   },
   {
-    name: 'Keyboard shortcuts',
-    description:
-      'You can manage phone, email and chat conversations all from a single mailbox.',
+    name: 'Course Keyword',
   },
   {
-    name: 'Calendars',
-    description:
-      'You can manage phone, email and chat conversations all from a single mailbox.',
+    name: 'Course Keyword',
   },
   {
-    name: 'Notifications',
-    description:
-      'Find what you need with advanced filters, bulk actions, and quick views.',
+    name: 'Course Keyword',
   },
   {
-    name: 'Boards',
-    description:
-      'Find what you need with advanced filters, bulk actions, and quick views.',
+    name: 'Course Keyword',
   },
   {
-    name: 'Reporting',
-    description:
-      'Find what you need with advanced filters, bulk actions, and quick views.',
+    name: 'Course Keyword',
   },
   {
-    name: 'Mobile app',
-    description:
-      'Find what you need with advanced filters, bulk actions, and quick views.',
+    name: 'Course Keyword',
+  },
+  {
+    name: 'Course Keyword',
+  },
+  {
+    name: 'Course Keyword',
+  },
+  {
+    name: 'Course Keyword',
+  },
+  {
+    name: 'Course Keyword',
   },
 ];
 
 export default function CourseContent() {
   return (
     <div className="bg-white">
-      <div className="mx-auto max-w-7xl py-16 px-4 sm:px-6 lg:grid lg:grid-cols-3 lg:gap-x-8 lg:py-24 lg:px-8">
+      <div className="mx-auto max-w-7xl py-16 px-4 sm:px-6 lg:grid lg:grid-cols-3 lg:gap-x-20 lg:py-24 lg:px-8">
         <div>
-          <h2 className="text-base font-semibold uppercase tracking-wide text-indigo-600">
-            Everything you need
+          <h2 className="text-xl font-bold uppercase tracking-wide text-red-600">
+            The Ultimate Guide to Understanding Algebra
           </h2>
           <p className="mt-2 text-3xl font-extrabold text-gray-900">
-            All-in-one platform
+            The Complete Course
           </p>
-          <p className="mt-4 text-lg text-gray-500">
-            Ac euismod vel sit maecenas id pellentesque eu sed consectetur.
-            Malesuada adipiscing sagittis vel nulla nec.
+          <p className="mt-4 pb-8 text-lg text-gray-500">
+            All topics typically taught in a standard Algebra course are covered
+            in depth.
           </p>
+          <div className="inline-flex rounded-md shadow">
+            <Link href="/lessons">
+              <a className="inline-flex items-center justify-center rounded-md border border-transparent bg-red-600 px-5 py-3 text-base font-medium text-white hover:bg-red-500">
+                View all lessons
+              </a>
+            </Link>
+          </div>
         </div>
         <div className="mt-12 lg:col-span-2 lg:mt-0">
           <dl className="space-y-10 sm:grid sm:grid-flow-col sm:grid-cols-2 sm:grid-rows-4 sm:gap-x-6 sm:gap-y-10 sm:space-y-0 lg:gap-x-8">
@@ -72,9 +76,6 @@ export default function CourseContent() {
                     {feature.name}
                   </p>
                 </dt>
-                <dd className="mt-2 ml-9 text-base text-gray-500">
-                  {feature.description}
-                </dd>
               </div>
             ))}
           </dl>
