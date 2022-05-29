@@ -53,7 +53,7 @@ export const lessons = [
     slug: 'lesson7',
     title: 'lesson7',
     description: 'lesson7 description',
-    youtubeUrl: 'youtube.com',
+    youtubeUrl: 'https://youtube.com',
   },
   {
     number: '8',
