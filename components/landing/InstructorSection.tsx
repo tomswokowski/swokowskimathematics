@@ -29,7 +29,9 @@ export default function InstructorSection() {
           <div className="mt-8">
             <div className="inline-flex rounded-md shadow">
               <a
-                href="https://www.udemy.com/course/theultimateguidetounderstandingalgebra/?couponCode=ALGEBRA2022"
+                target="_blank"
+                rel="noreferrer"
+                href={process.env.NEXT_PUBLIC_UDEMY_URL}
                 className="inline-flex items-center justify-center rounded-md border border-transparent bg-red-600 px-5 py-3 text-base font-medium text-white hover:bg-red-500"
               >
                 View all reviews

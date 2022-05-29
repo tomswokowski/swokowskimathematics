@@ -51,7 +51,7 @@ export const NavBar = () => {
           <div className="hidden text-right md:block">
             <span className="inline-flex rounded-md shadow-md ring-1 ring-black ring-opacity-5">
               <a
-                href="https://www.udemy.com/course/theultimateguidetounderstandingalgebra/?couponCode=ALGEBRA2022"
+                href={process.env.NEXT_PUBLIC_UDEMY_URL}
                 target="_blank"
                 rel="noreferrer"
                 className="inline-flex items-center rounded-md border border-transparent bg-red-600 px-4 py-2 text-base font-medium text-white hover:bg-red-500"
@@ -108,7 +108,7 @@ export const NavBar = () => {
                 ))}
               </div>
               <a
-                href="https://www.udemy.com/course/theultimateguidetounderstandingalgebra/?couponCode=ALGEBRA2022"
+                href={process.env.NEXT_PUBLIC_UDEMY_URL}
                 target="_blank"
                 rel="noreferrer"
                 className="inline-flex w-full cursor-pointer items-center bg-gray-50 px-5 py-3 text-center font-medium text-red-600 hover:bg-gray-100"

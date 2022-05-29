@@ -26,7 +26,7 @@ export default function HeroSection() {
               </a>{' '}
               or enroll in the course on{' '}
               <a
-                href="https://www.udemy.com/course/theultimateguidetounderstandingalgebra/?couponCode=ALGEBRA2022"
+                href={process.env.NEXT_PUBLIC_UDEMY_URL}
                 target="_blank"
                 rel="noreferrer"
                 className="text-red-500 underline"
