@@ -33,7 +33,9 @@ const LessonPage = ({ lesson, previousSlug, nextSlug }: any) => {
     <>
       <div className="mx-auto max-w-5xl sm:px-6 lg:flex lg:items-center lg:px-8">
         <div className="relative">
-          <h1>{lesson.title}</h1>
+          <h1 className="text-3xl font-extrabold text-gray-900 sm:text-4xl">
+            {lesson.title}
+          </h1>
           <video
             src={lesson.youtubeUrl}
             className="js-video mx-auto mt-4 rounded bg-amber-100"
@@ -64,8 +66,10 @@ const LessonPage = ({ lesson, previousSlug, nextSlug }: any) => {
               </Link>
             )}
           </div>
-          <h3>Lesson Description:</h3>
-          <p>{lesson.description}</p>
+          <h3 className="mb-4 mt-8 text-xl font-medium text-gray-900 md:col-span-5">
+            Lesson Description:
+          </h3>
+          <p className="text-base text-gray-500">{lesson.description}</p>
         </div>
       </div>
       <NewsletterSection />
