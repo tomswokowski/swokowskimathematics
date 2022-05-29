@@ -31,16 +31,18 @@ export const getStaticProps: GetStaticProps = async ({ params }) => {
 const LessonPage = ({ lesson, previousSlug, nextSlug }: any) => {
   return (
     <>
-      <div className="mx-auto max-w-5xl sm:px-6 lg:flex lg:items-center lg:px-8">
+      <div className="mx-auto max-w-5xl items-center sm:px-6 lg:flex lg:px-8">
         <div className="relative">
           <h1 className="text-3xl font-extrabold text-gray-900 sm:text-4xl">
             {lesson.title}
           </h1>
-          <video
-            src={lesson.youtubeUrl}
-            className="js-video mx-auto mt-4 rounded bg-amber-100"
-            poster="https://via.placeholder.com/1920x1080/eee"
-          />
+          <div className="relative mt-12 sm:mx-auto sm:max-w-lg lg:col-span-6 lg:mx-0 lg:mt-0 lg:flex lg:max-w-none">
+            <video
+              src={lesson.youtubeUrl}
+              className="mx-auto mt-4 rounded bg-amber-100"
+              poster="https://via.placeholder.com/1920x1080/eee"
+            />
+          </div>
           <div className="mt-4 mb-8 flex justify-between">
             {previousSlug && (
               <Link href={`/lessons/${previousSlug}`}>

@@ -2,7 +2,7 @@ import { SubscribeForm } from '../common/SubscribeForm';
 
 export default function HeroSection() {
   return (
-    <div className="relative pt-6 pb-8 sm:pb-16 lg:pb-24">
+    <div className="relative pb-8 sm:pb-16 lg:pb-24">
       <main className="mx-auto max-w-7xl px-4 sm:px-6 md:mt-8 lg:mt-16">
         <div className="lg:grid lg:grid-cols-12 lg:gap-8">
           <div className="sm:text-center md:mx-auto md:max-w-2xl lg:col-span-6 lg:text-left">
@@ -48,35 +48,13 @@ export default function HeroSection() {
               </p>
             </div>
           </div>
-          <div className="relative mt-12 sm:mx-auto sm:max-w-lg lg:col-span-6 lg:mx-0 lg:mt-0 lg:flex lg:max-w-none lg:items-center">
-            <div className="relative mx-auto w-full rounded-lg shadow-lg lg:max-w-md">
-              <button
-                type="button"
-                className="relative block w-full overflow-hidden rounded-lg bg-white focus:outline-none focus:ring-2 focus:ring-indigo-500 focus:ring-offset-2"
-              >
-                <span className="sr-only">
-                  Watch the promo video to learn more
-                </span>
-                <img
-                  className="w-full"
-                  src="https://images.unsplash.com/photo-1556740758-90de374c12ad?ixlib=rb-1.2.1&auto=format&fit=crop&w=1350&q=80"
-                  alt=""
-                />
-                <span
-                  className="absolute inset-0 flex h-full w-full items-center justify-center"
-                  aria-hidden="true"
-                >
-                  <svg
-                    className="h-20 w-20 text-red-500"
-                    fill="currentColor"
-                    viewBox="0 0 84 84"
-                  >
-                    <circle opacity="0.9" cx={42} cy={42} r={42} fill="white" />
-                    <path d="M55.5039 40.3359L37.1094 28.0729C35.7803 27.1869 34 28.1396 34 29.737V54.263C34 55.8604 35.7803 56.8131 37.1094 55.9271L55.5038 43.6641C56.6913 42.8725 56.6913 41.1275 55.5039 40.3359Z" />
-                  </svg>
-                </span>
-              </button>
-            </div>
+          <div className="relative mt-12 sm:mx-auto sm:max-w-lg lg:col-span-6 lg:mx-0 lg:mt-0 lg:flex lg:max-w-none">
+            <iframe
+              src="https://www.youtube.com/embed/E7wJTI-1dvQ"
+              allowFullScreen={true}
+              title="Promo Video"
+              className="aspect-video mt-8 mb-8 w-full items-center rounded-lg shadow-md"
+            />
           </div>
         </div>
       </main>
