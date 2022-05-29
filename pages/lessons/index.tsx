@@ -1,18 +1,18 @@
 import { MainLayout } from '../../components/layouts/MainLayout';
-import { courseData } from '../../data/courseData';
+import { lessons } from '../../data/lessons';
 import { useState, useEffect } from 'react';
 import Link from 'next/link';
 
 const Lessons = () => {
   const [searchInput, setSearchInput] = useState('');
-  const [filteredLessons, setFilteredLessons] = useState(courseData);
+  const [filteredLessons, setFilteredLessons] = useState(lessons);
   const [chapters, setChapters] = useState<string[]>([
-    ...new Set(courseData.map((lesson) => lesson.chapter)),
+    ...new Set(lessons.map((lesson) => lesson.chapter)),
   ]);
 
   useEffect(() => {
     if (searchInput !== '') {
-      const filteredData = courseData.filter((item) => {
+      const filteredData = lessons.filter((item) => {
         return Object.values(item)
           .join('')
           .toLowerCase()
@@ -20,7 +20,7 @@ const Lessons = () => {
       });
       setFilteredLessons(filteredData);
     } else {
-      setFilteredLessons(courseData);
+      setFilteredLessons(lessons);
     }
   }, [searchInput]);
 

@@ -1,11 +1,11 @@
-export const courseData = [
+export const lessons = [
   {
     number: '1',
     chapter: '1',
     slug: 'lesson1',
     title: 'lesson1',
     description: 'lesson1 description',
-    youtubeUrl: 'youtube.com',
+    youtubeUrl: 'https://youtube.com',
   },
   {
     number: '2',
@@ -13,7 +13,7 @@ export const courseData = [
     slug: 'lesson2',
     title: 'lesson2',
     description: 'lesson2 description',
-    youtubeUrl: 'youtube.com',
+    youtubeUrl: 'https://youtube.com',
   },
   {
     number: '3',
@@ -21,7 +21,7 @@ export const courseData = [
     slug: 'lesson3',
     title: 'lesson3',
     description: 'lesson3 description',
-    youtubeUrl: 'youtube.com',
+    youtubeUrl: 'https://youtube.com',
   },
   {
     number: '4',
@@ -29,7 +29,7 @@ export const courseData = [
     slug: 'lesson4',
     title: 'lesson4',
     description: 'lesson4 description',
-    youtubeUrl: 'youtube.com',
+    youtubeUrl: 'https://youtube.com',
   },
   {
     number: '5',
@@ -37,7 +37,7 @@ export const courseData = [
     slug: 'lesson5',
     title: 'lesson5',
     description: 'lesson5 description',
-    youtubeUrl: 'youtube.com',
+    youtubeUrl: 'https://youtube.com',
   },
   {
     number: '6',
@@ -45,7 +45,7 @@ export const courseData = [
     slug: 'lesson6',
     title: 'lesson6',
     description: 'lesson6 description',
-    youtubeUrl: 'youtube.com',
+    youtubeUrl: 'https://youtube.com',
   },
   {
     number: '7',
@@ -61,6 +61,6 @@ export const courseData = [
     slug: 'lesson8',
     title: 'lesson8',
     description: 'lesson8 description',
-    youtubeUrl: 'youtube.com',
+    youtubeUrl: 'https://youtube.com',
   },
 ];
