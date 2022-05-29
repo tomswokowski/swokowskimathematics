@@ -53,8 +53,7 @@ export default function HeroSection() {
               src="https://www.youtube.com/embed/E7wJTI-1dvQ"
               allowFullScreen={true}
               title="Promo Video"
-              className="mt-8 mb-8 w-full items-center rounded-lg shadow-md"
-              style={{ minHeight: '250px' }}
+              className="mt-8 mb-8 aspect-video w-full items-center rounded-sm shadow-sm"
             />
           </div>
         </div>

@@ -32,13 +32,14 @@ const LessonPage = ({ lesson, previousSlug, nextSlug }: any) => {
   return (
     <>
       <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:flex lg:items-center lg:px-8">
-        <div className="relative w-full">
+        <div className="relative w-full lg:w-10/12">
           <h1 className="text-3xl font-extrabold text-gray-900 sm:text-4xl">
             {lesson.title}
           </h1>
-          <div className="mt-4 w-full sm:max-w-lg lg:col-span-6 lg:mx-0 lg:flex lg:max-w-none">
-            <div className="sm:mx-auto lg:col-span-6 lg:mx-0 lg:mt-0 lg:flex">
+          <div className="">
+            <div className="sm:mx-auto lg:col-span-6 lg:mx-0 lg:mt-0">
               <iframe
+                className="mt-8 mb-8 aspect-video w-full items-center rounded-sm shadow-sm"
                 src="https://www.youtube.com/embed/E7wJTI-1dvQ"
                 frameBorder="0"
               />
