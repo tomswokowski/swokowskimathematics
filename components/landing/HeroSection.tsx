@@ -48,12 +48,13 @@ export default function HeroSection() {
               </p>
             </div>
           </div>
-          <div className="relative mt-12 sm:mx-auto sm:max-w-lg lg:col-span-6 lg:mx-0 lg:mt-0 lg:flex lg:max-w-none">
+          <div className="mt-12 sm:mx-auto sm:max-w-lg lg:col-span-6 lg:mx-0 lg:mt-0 lg:flex lg:max-w-none">
             <iframe
               src="https://www.youtube.com/embed/E7wJTI-1dvQ"
               allowFullScreen={true}
               title="Promo Video"
-              className="aspect-video mt-8 mb-8 w-full items-center rounded-lg shadow-md"
+              className="mt-8 mb-8 w-full items-center rounded-lg shadow-md"
+              style={{ minHeight: '250px' }}
             />
           </div>
         </div>
