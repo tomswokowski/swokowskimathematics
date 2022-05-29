@@ -17,7 +17,7 @@ export default function HeroSection() {
               class in this comprehensive course. View all 323 lessons for free
               on{' '}
               <a
-                href="https://www.youtube.com/channel/UCX_hglZU0ipL5WZXzDjmC1Q"
+                href={process.env.NEXT_PUBLIC_YOUTUBE_CHANNEL_URL}
                 target="_blank"
                 rel="noreferrer"
                 className="text-red-500 underline"
