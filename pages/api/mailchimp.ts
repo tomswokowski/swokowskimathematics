@@ -17,7 +17,7 @@ export default async (req: any, res: any) => {
     let audienceId = process.env.MAILCHIMP_AUDIENCE_ID || '';
     await mailchimp.lists.addListMember(audienceId, {
       email_address: email,
-      status: 'subscribed',
+      status: 'pending',
     });
     return res.status(201).json({ error: '' });
   } catch (error: any) {

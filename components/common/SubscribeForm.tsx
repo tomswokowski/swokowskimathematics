@@ -43,7 +43,7 @@ export const SubscribeForm = () => {
           id="email-input"
           name="email"
           placeholder={
-            subscribed ? "You're subscribed !  🎉" : 'Enter your email'
+            subscribed ? "Check your email to confirm !  🎉" : 'Enter your email'
           }
           ref={inputEl}
           required
