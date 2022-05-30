@@ -50,7 +50,7 @@ export default function HeroSection() {
           </div>
           <div className="mt-12 sm:mx-auto sm:max-w-lg lg:col-span-6 lg:mx-0 lg:mt-0 lg:flex lg:max-w-none">
             <iframe
-              src="https://www.youtube.com/embed/E7wJTI-1dvQ"
+              src={process.env.NEXT_PUBLIC_PROMO_URL}
               allowFullScreen={true}
               title="Promo Video"
               className="mt-8 mb-8 aspect-video w-full items-center rounded-sm shadow-sm"

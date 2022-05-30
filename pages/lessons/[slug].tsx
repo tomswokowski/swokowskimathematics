@@ -17,7 +17,7 @@ export const getStaticPaths: GetStaticPaths = async () => {
 export const getStaticProps: GetStaticProps = async ({ params }) => {
   const lesson = lessons.find((lesson) => lesson.slug === params!.slug);
 
-  const currentLessonIndex = parseInt(lesson!.number) - 1;
+  const currentLessonIndex = lesson!.number - 1;
 
   const previousIndex = currentLessonIndex - 1;
   const nextIndex = currentLessonIndex + 1;
@@ -40,7 +40,7 @@ const LessonPage = ({ lesson, previousSlug, nextSlug }: any) => {
             <div className="sm:mx-auto lg:col-span-6 lg:mx-0 lg:mt-0">
               <iframe
                 className="mt-8 mb-8 aspect-video w-full items-center rounded-sm shadow-sm"
-                src="https://www.youtube.com/embed/E7wJTI-1dvQ"
+                src={lesson.youtubeUrl}
                 frameBorder="0"
               />
             </div>
