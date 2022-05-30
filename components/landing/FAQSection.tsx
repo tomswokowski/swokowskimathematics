@@ -15,7 +15,7 @@ const faqs = [
     id: 3,
     question: 'Who is the instructor?',
     answer:
-      "My name is John Swokowski and I am the instructor of the course. I've been a high school math teacher in the city of Milwaukee, Wisconsin for nearly 40 years. I've taught thousands of actual students in person and I' deeply familiar with the parts of Algebra that many students find confusing or difficult to learn. This level of empathy of the struggling and frustrated student is what sets me apart from many other online Algebra course creators who have never even set foot in an actual classroom. I' still teaching in Milwaukee and I' created this course to help more students learn Algebra.",
+      "My name is John Swokowski and I am the instructor of the course. I've been a high school math teacher in the city of Milwaukee, Wisconsin for nearly 40 years. I've taught thousands of actual students in person and I'm deeply familiar with the parts of Algebra that many students find confusing or difficult to learn. This level of empathy for the struggling and frustrated student is what sets me apart from many other online Algebra course creators who have never even set foot in an actual classroom. I'm still teaching in Milwaukee and I created this course to help more students learn Algebra.",
   },
   {
     id: 3,
@@ -34,7 +34,7 @@ const faqs = [
     id: 5,
     question: 'How do I get help if needed?',
     answer:
-      "I have a passion for helping students who have a desire to learn. If you a question about anything, you are encouraged to send me a private message in the course dashboard on Udemy. I will do my best to respond within 24 hours. You may also check the student discussion board under each lesson. It's possible that another student has had the same question as you and is already answered by either myself or another student. I'm always here to help.",
+      "I have a passion for helping students who have a desire to learn. If you a question about anything, you are encouraged to send me a private message in the course dashboard on Udemy. I will do my best to respond within 24 hours. You may also check the student discussion board under each lesson. It's possible that another student has had the same question as you and it is already answered by either myself or another student. I'm always here to help.",
   },
   {
     id: 6,

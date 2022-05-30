@@ -3,40 +3,40 @@ import Link from 'next/link';
 
 const features = [
   {
-    name: 'Course Keyword',
+    name: 'Solving equations & inequalities',
   },
   {
-    name: 'Course Keyword',
+    name: 'Linear equations, functions, & graphs',
   },
   {
-    name: 'Course Keyword',
+    name: 'Sequences',
   },
   {
-    name: 'Course Keyword',
+    name: 'Sequences',
   },
   {
-    name: 'Course Keyword',
+    name: 'Functions',
   },
   {
-    name: 'Course Keyword',
+    name: 'Absolute value equations, functions, & inequalities',
   },
   {
-    name: 'Course Keyword',
+    name: 'Quadratic equations & functions',
   },
   {
-    name: 'Course Keyword',
+    name: 'Polynomial expressions, equations, & functions',
   },
   {
-    name: 'Course Keyword',
+    name: 'Exponential & logarithmic functions',
   },
   {
-    name: 'Course Keyword',
+    name: 'Radical equations & functions',
   },
   {
-    name: 'Course Keyword',
+    name: 'Rational expressions, equations, & functions',
   },
   {
-    name: 'Course Keyword',
+    name: 'And much more...',
   },
 ];
 
@@ -64,7 +64,7 @@ export default function CourseContent() {
           </div>
         </div>
         <div className="mt-12 lg:col-span-2 lg:mt-0">
-          <dl className="space-y-10 sm:grid sm:grid-flow-col sm:grid-cols-2 sm:grid-rows-4 sm:gap-x-6 sm:gap-y-10 sm:space-y-0 lg:gap-x-8">
+          <dl className="space-y-10 sm:grid sm:grid-flow-col sm:grid-cols-2 sm:grid-rows-4 sm:gap-x-6 sm:gap-y-10 sm:space-y-0 lg:gap-x-4">
             {features.map((feature) => (
               <div key={feature.name} className="relative">
                 <dt>
@@ -72,7 +72,7 @@ export default function CourseContent() {
                     className="absolute h-6 w-6 text-green-500"
                     aria-hidden="true"
                   />
-                  <p className="ml-9 text-lg font-medium leading-6 text-gray-900">
+                  <p className="ml-9 text-sm font-medium leading-6 text-gray-900">
                     {feature.name}
                   </p>
                 </dt>

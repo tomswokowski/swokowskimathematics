@@ -33,7 +33,7 @@ export default function HeroSection() {
               >
                 Udemy
               </a>{' '}
-              to get additional support and have all extra learning material
+              and get additional support and have all extra learning material
               included.
             </p>
             <div className="mt-8 sm:mx-auto sm:max-w-lg sm:text-center lg:mx-0 lg:text-left">

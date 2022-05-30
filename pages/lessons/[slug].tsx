@@ -73,7 +73,7 @@ const LessonPage = ({ lesson, previousSlug, nextSlug }: any) => {
           <h3 className="mb-4 mt-8 text-xl font-medium text-gray-900 md:col-span-5">
             Lesson Description:
           </h3>
-          <p className="text-base text-gray-500">{lesson.description}</p>
+          <p className="text-lg text-gray-500">{lesson.description}</p>
         </div>
       </div>
       <NewsletterSection />

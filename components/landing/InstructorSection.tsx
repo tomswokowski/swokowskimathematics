@@ -23,8 +23,7 @@ export default function InstructorSection() {
             for nearly 40 years. The most rewarding experiences I have
             encountered have been working with students who did not like Math
             and thought they could not learn it. I love teaching and am looking
-            forward to reaching many more students through Swokowski
-            Mathematics.
+            forward to reaching many more students online.
           </p>
           <div className="mt-8">
             <div className="inline-flex rounded-md shadow">

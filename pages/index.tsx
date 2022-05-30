@@ -6,7 +6,6 @@ import CTASection from '../components/landing/CTASection';
 import TestimonialSection from '../components/landing/TestimonialSection';
 import InstructorSection from '../components/landing/InstructorSection';
 import FAQSection from '../components/landing/FAQSection';
-import NewsletterSection from '../components/common/SubscribeSection';
 
 const Home = () => {
   return (

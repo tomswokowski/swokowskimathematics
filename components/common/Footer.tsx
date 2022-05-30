@@ -8,8 +8,14 @@ const navigation = {
     { name: 'Resources', href: '/resources' },
   ],
   courses: [
-    { name: 'The Ultimate Guide to Understanding Algebra', href: '#' },
-    { name: 'Algebra Bootcamp', href: '#' },
+    {
+      name: 'The Ultimate Guide to Understanding Algebra',
+      href: process.env.NEXT_PUBLIC_UDEMY_URL,
+    },
+    {
+      name: 'Algebra Bootcamp',
+      href: 'https://www.udemy.com/course/algebra-boot-camp/',
+    },
   ],
 };
 
@@ -59,7 +65,9 @@ export const Footer = () => {
                     <li key={item.name}>
                       <a
                         href={item.href}
+                        target="_blank"
                         className="text-base text-gray-500 hover:text-gray-900 xl:text-xs"
+                        rel="noreferrer"
                       >
                         {item.name}
                       </a>
@@ -72,7 +80,7 @@ export const Footer = () => {
         </div>
         <div className="mt-12 border-t border-gray-200 pt-8">
           <p className="text-base text-gray-400 xl:text-center">
-            &copy; {new Date().getFullYear()} Swokowski Mathematics. All rights
+            &copy; {new Date().getFullYear()} Swokowski, LLC. All rights
             reserved.
           </p>
         </div>

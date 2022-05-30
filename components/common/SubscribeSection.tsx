@@ -5,10 +5,10 @@ export default function SubscribeSection() {
     <div className="bg-white">
       <div className="mx-auto max-w-7xl py-24 px-4 sm:px-6 lg:flex lg:items-center lg:py-32 lg:px-8">
         <div className="mr-10 mb-4 w-full xl:w-1/2">
-          <h2 className="text-3xl font-extrabold text-gray-900 sm:text-4xl">
+          <h2 className="text-2xl font-extrabold text-gray-900">
             Get the free practice workbook
           </h2>
-          <p className="mt-3 max-w-3xl text-lg text-gray-500">
+          <p className="mt-3 max-w-3xl text-base text-gray-500">
             In order to truly learn the material, you must practice. By entering
             your email address, you will receive a 323 page downloadable PDF
             file that contains over 1,700 practice problems that accompany each

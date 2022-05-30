@@ -68,7 +68,7 @@ const Lessons = () => {
                         <a>
                           <div
                             key={lesson.number}
-                            className="text-grey-dark border-1 mb-4 flex h-12 items-center justify-center text-sm font-semibold shadow-md hover:bg-red-600 hover:text-white"
+                            className="text-grey-dark border-1 mb-4 flex h-12 items-center justify-center bg-red-50 p-8 shadow-lg hover:bg-red-600 hover:text-white"
                           >
                             <p>{lesson.title}</p>
                           </div>

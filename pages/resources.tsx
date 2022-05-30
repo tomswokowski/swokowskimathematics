@@ -31,11 +31,11 @@ const Resources = () => {
               >
                 Udemy
               </a>{' '}
-              course. The videos are exactly the same but you with the purchase
-              of the Udemy course, all additional course resources (practice
-              worksheets with answers, downloadable lesson quizzes, unit reviews
-              and tests) are included. You will be able to receive support
-              through your learning via direct message with the instructor.
+              course. The videos are exactly the same but with the purchase of
+              the Udemy course, all additional course resources (practice
+              worksheets with answers, lesson quizzes, unit reviews and tests)
+              are included. You will be able to receive support through your
+              learning via direct message with the instructor.
             </p>
           </div>
         </div>
