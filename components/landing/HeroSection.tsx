@@ -53,7 +53,7 @@ export default function HeroSection() {
               src={process.env.NEXT_PUBLIC_PROMO_URL}
               allowFullScreen={true}
               title='Promo Video'
-              className='mt-8 mb-8 aspect-video w-full items-center rounded-sm shadow-sm'
+              className='safari14Video mt-8 mb-8 aspect-video w-full items-center rounded-sm shadow-sm'
             />
           </div>
         </div>

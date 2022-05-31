@@ -39,7 +39,7 @@ const LessonPage = ({ lesson, previousSlug, nextSlug }: any) => {
           <div className=''>
             <div className='sm:mx-auto lg:col-span-6 lg:mx-0 lg:mt-0'>
               <iframe
-                className='mt-8 mb-8 aspect-video w-full items-center rounded-sm shadow-sm'
+                className='safari14VideoLesson mt-8 mb-8 aspect-video w-full items-center rounded-sm shadow-sm'
                 src={lesson.youtubeUrl}
                 frameBorder='0'
               />

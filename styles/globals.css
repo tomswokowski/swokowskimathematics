@@ -1,3 +1,33 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+@media only screen and (max-width: 767px) {
+  @supports not (aspect-ratio: 16 / 9) {
+    .safari14Video {
+      min-height: 250px;
+    }
+  }
+}
+
+@supports not (aspect-ratio: 16 / 9) {
+  .safari14VideoLesson {
+    min-height: 300px;
+  }
+}
+
+@media only screen and (min-width: 700px) {
+  @supports not (aspect-ratio: 16 / 9) {
+    .safari14VideoLesson {
+      min-height: 400px;
+    }
+  }
+}
+
+@media only screen and (min-width: 900px) {
+  @supports not (aspect-ratio: 16 / 9) {
+    .safari14VideoLesson {
+      min-height: 500px;
+    }
+  }
+}
