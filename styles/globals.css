@@ -2,10 +2,16 @@
 @tailwind components;
 @tailwind utilities;
 
-@media only screen and (max-width: 767px) {
+@supports not (aspect-ratio: 16 / 9) {
+  .safari14Video {
+    min-height: 250px;
+  }
+}
+
+@media screen and (min-device-width: 600px) and (max-device-width: 800px) {
   @supports not (aspect-ratio: 16 / 9) {
     .safari14Video {
-      min-height: 250px;
+      min-height: 400px;
     }
   }
 }
