@@ -5,6 +5,7 @@ import { ArrowLeftIcon, ArrowRightIcon } from '@heroicons/react/outline';
 import Link from 'next/link';
 
 import { GetStaticPaths, GetStaticProps } from 'next';
+import { SEO } from '../../components/common/SEO';
 
 export const getStaticPaths: GetStaticPaths = async () => {
   const paths = lessons.map((lesson) => ({
@@ -31,6 +32,11 @@ export const getStaticProps: GetStaticProps = async ({ params }) => {
 const LessonPage = ({ lesson, previousSlug, nextSlug }: any) => {
   return (
     <>
+      <SEO
+        title={lesson.title}
+        description={lesson.description}
+        siteUrl={`/lessons/${lesson.slug}`}
+      />
       <div className='mx-auto max-w-7xl px-4 sm:px-6 lg:flex lg:items-center lg:px-8'>
         <div className='relative w-full lg:w-10/12'>
           <h1 className='text-3xl font-extrabold text-gray-900 sm:text-4xl'>
