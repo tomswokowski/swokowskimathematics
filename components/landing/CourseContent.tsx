@@ -12,7 +12,7 @@ const features = [
     name: 'Sequences',
   },
   {
-    name: 'Sequences',
+    name: 'System of equations',
   },
   {
     name: 'Functions',
