@@ -29,7 +29,20 @@ export const getStaticProps: GetStaticProps = async ({ params }) => {
   return { props: { lesson, previousSlug, nextSlug } };
 };
 
-const LessonPage = ({ lesson, previousSlug, nextSlug }: any) => {
+interface LessonPageProps {
+  lesson: {
+    number: number;
+    chapter: string;
+    slug: string;
+    title: string;
+    description: string;
+    youtubeUrl: string;
+  };
+  previousSlug: string;
+  nextSlug: string;
+}
+
+const LessonPage = ({ lesson, previousSlug, nextSlug }: LessonPageProps) => {
   return (
     <>
       <SEO

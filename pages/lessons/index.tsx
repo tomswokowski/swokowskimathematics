@@ -4,6 +4,15 @@ import { useState, useEffect } from 'react';
 import Link from 'next/link';
 import { SEO } from '../../components/common/SEO';
 
+interface Lesson {
+  number: number;
+  chapter: string;
+  slug: string;
+  title: string;
+  description: string;
+  youtubeUrl: string;
+}
+
 const Lessons = () => {
   const [searchInput, setSearchInput] = useState('');
   const [filteredLessons, setFilteredLessons] = useState(lessons);
@@ -57,7 +66,7 @@ const Lessons = () => {
 
       <div className='mx-2 mb-8 flex flex-wrap lg:px-8'>
         {chapters.length > 0 ? (
-          chapters.map((chapter: any, index) => {
+          chapters.map((chapter: string, index) => {
             return (
               <div key={index} className='mb-4 w-full px-2 md:w-1/2 xl:w-1/3'>
                 <h3 className='mb-4 text-center text-2xl font-semibold'>
@@ -65,7 +74,7 @@ const Lessons = () => {
                 </h3>
                 {filteredLessons
                   .filter((lesson) => lesson.chapter === chapter)
-                  .map((lesson: any) => {
+                  .map((lesson: Lesson) => {
                     return (
                       <Link
                         key={lesson.number}
