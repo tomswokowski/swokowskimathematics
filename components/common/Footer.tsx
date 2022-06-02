@@ -6,6 +6,8 @@ const navigation = {
     { name: 'Home', href: '/' },
     { name: 'Lessons', href: '/lessons' },
     { name: 'Resources', href: '/resources' },
+    { name: 'Terms & Conditions', href: '/terms' },
+    { name: 'Privacy Policy', href: '/privacy' },
   ],
   courses: [
     {
