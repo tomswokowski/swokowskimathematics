@@ -4,10 +4,12 @@ export const SubscribeForm = () => {
   const inputEl: any = useRef(null);
   const [error, setError] = useState(false);
   const [message, setMessage] = useState('');
+  const [loading, setLoading] = useState(false);
   const [subscribed, setSubscribed] = useState(false);
 
   const subscribe = async (e: any) => {
     e.preventDefault();
+    setLoading(true);
 
     const res = await fetch('/api/mailchimp', {
       body: JSON.stringify({
@@ -22,12 +24,14 @@ export const SubscribeForm = () => {
     const { error } = await res.json();
     if (error) {
       setError(true);
+      setLoading(false);
       setMessage(error);
       return;
     }
 
     inputEl.current.value = '';
     setError(false);
+    setLoading(false);
     setSubscribed(true);
     setMessage('Successfully! 🎉 You are now subscribed.');
   };
@@ -43,7 +47,9 @@ export const SubscribeForm = () => {
           id="email-input"
           name="email"
           placeholder={
-            subscribed ? "Check your email to confirm !  🎉" : 'Enter your email'
+            subscribed
+              ? 'Check your email to confirm !  🎉'
+              : 'Enter your email'
           }
           ref={inputEl}
           required
@@ -57,7 +63,11 @@ export const SubscribeForm = () => {
             className="flex w-full items-center justify-center rounded-md border border-transparent bg-red-600 py-3 px-5 text-base font-medium text-white hover:bg-red-500 focus:outline-none focus:ring-2 focus:ring-red-600 focus:ring-offset-2"
             disabled={subscribed}
           >
-            {subscribed ? 'Thank you!' : 'Get Free Workbook'}
+            {loading
+              ? 'Loading...'
+              : subscribed
+              ? 'Thank you!'
+              : 'Get Free Workbook'}
           </button>
         </div>
       </form>
